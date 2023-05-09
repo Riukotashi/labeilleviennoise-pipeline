@@ -3,5 +3,5 @@ on: push
 
 jobs:
   test:
-    uses: Riukotashi/pipelines-common/.github/workflows/test.yml
+    uses: Riukotashi/pipelines-common/.github/workflows/test.yml@main
 
