@@ -3,17 +3,5 @@ on: push
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    uses: Riukotashi/pipelines-common/.github/workflows/test.yml
 
-    steps:
-      - uses: actions/checkout@v3
-
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 8
-          run_install: |
-            - recursive: true
-              args: [--no-frozen-lockfile]
-
-      - name: Run test
-        run: pnpm test
