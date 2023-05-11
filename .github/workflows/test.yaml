@@ -1,7 +1,10 @@
-name: Tests
+name: Global Ci
 on: push
 
 jobs:
   test:
     uses: Riukotashi/pipelines-common/.github/workflows/test.yml@main
+  lint:
+    uses: Riukotashi/pipelines-common/.github/workflows/lint.yml@main
+
 
